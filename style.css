@@ -12,6 +12,27 @@ body{
   min-height: 100vh;
   background: rgb(255, 200, 80);
 }
+.wrapper{
+padding: 25px;
+border-radius: 10px;
+background: purple;
+box-shadow: 0 10px 30px rgba(0,0,0,0,1);
+}
+.cards, .card, .view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards{
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cards .card{
+  height: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
+}
+
 .card .back-view img{
   max-width: 45px;
 }
