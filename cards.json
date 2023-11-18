@@ -1,0 +1,27 @@
+[
+  {
+    "image": "../images/iron-man_2.jpg",
+    "name": "iron_man"
+    },
+    {
+      "image": "../images/spider-man_2.jpg",
+      "name": "spider_man"
+      },
+      {
+        "image": "../images/captain-america_2.jpg",
+        "name": "captain_america"
+        },
+        {
+          "image": "../images/thor_2.jpg",
+          "name": "thor"
+          },
+          {
+            "image": "../images/black-panther_2.jpg",
+            "name": "black_panther"
+            },
+            {
+              "image": "../images/black-widow_2.jpg",
+              "name": "black_widow"
+              }
+
+]
