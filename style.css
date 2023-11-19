@@ -36,3 +36,21 @@ box-shadow: 0 10px 30px rgba(0,0,0,0,1);
 .card .back-view img{
   max-width: 45px;
 }
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
