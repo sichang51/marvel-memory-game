@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -13,10 +14,11 @@ body{
   background: rgb(255, 200, 80);
 }
 .wrapper{
+height: 400px;
+width: 400px;
 padding: 25px;
+background: white;
 border-radius: 10px;
-background: purple;
-box-shadow: 0 10px 30px rgba(0,0,0,0,1);
 }
 .cards, .card, .view{
   display: flex;
@@ -27,14 +29,95 @@ box-shadow: 0 10px 30px rgba(0,0,0,0,1);
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cards .card{
+  cursor: pointer;
+  position: relative;
+  perspective: 800px;
+  transform-style: preserve-3d;
   height: calc(100% / 4 - 10px);
   width: calc(100% / 4 - 10px);
 }
-
+.card.shake{
+  animation: shake 0.35s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translateX(-13px);
+  }
+  40%{
+    transform: translateX(13px);
+  }
+  60%{
+    transform: translateX(-8px);
+  }
+  80%{
+    transform: translateX(8px);
+  }
+}
+.cards .card .view{
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 7px;
+  backface-visibility: hidden;
+  transition: transform 0.25s linear;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.card .front-view span{
+  color: #6563ff;
+  font-size: 40px;
+}
+.card .back-view{
+  transform: rotateY(-180deg);
+}
 .card .back-view img{
   max-width: 45px;
+}
+.card.flip .front-view{
+  transform: rotateY(180deg)
+}
+.card.flip .back-view{
+  transform: rotateY(0)
+}
+
+/* body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 16px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(71, 166, 71);
+  color: white;
 }
 
 .grid-container {
@@ -54,3 +137,37 @@ box-shadow: 0 10px 30px rgba(0,0,0,0,1);
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
 }
+
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card.flipped{
+  transform: rotateY(180deg);
+}
+
+.front,
+.back{
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width=100% height=100%");
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden; 
+}*/

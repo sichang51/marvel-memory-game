@@ -1,72 +1,128 @@
 <!DOCTYPE html>
+<!-- practice -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marvel Memory Card Game</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Material Icon Link for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
- <h1>Memory Cards</h1>
- <div class=""grid-container></div>
- <p>Score: <span class="score"></span></p>
-  <div class="actions">
-    <button onClick="restart()">Restart</button>
-  </div>
-<script src="index.js"></script>
-</body>
-</html>
-
-
-  <!-- <div class="wrapper">
+  <div class="wrapper">
     <ul class="cards">
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="iron-man_2.jpg" alt="card-img"
+          <img src="../images/iron-man_2.jpg" alt="card-img">
         </div>
       </li>
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="black-panther_2.jpg" alt="card-img"
+          <img src="../images/black-panther_2.jpg" alt="card-img">
         </div>
       </li>
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="black-widow_2.jpg" alt="card-img"
+          <img src="../images/black-widow_2.jpg" alt="card-img">
         </div>
       </li>
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="captain-america_2.jpg" alt="card-img"
+          <img src="../images/captain-america_2.jpg" alt="card-img">
         </div>
       </li>
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="spider-man_2.jpg" alt="card-img"
+          <img src="../images/spider-man_2.jpg" alt="card-img">
         </div>
       </li>
       <li class="card">
         <div class="view front-view">
-          <img src="question-mark.jpeg" alt="card-img">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
         </div>
         <div class="view back-view">
-          <img src="thor_2.jpg" alt="card-img"
+          <img src="../images/thor_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/iron-man_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/black-panther_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/black-widow_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/captain-america_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/spider-man_2.jpg" alt="card-img">
+        </div>
+      </li>
+      <li class="card">
+        <div class="view front-view">
+          <span class="material-icons"> <img src="../images/question-mark.jpeg" alt="card-img" style="width:60px;height:60px"/></span>
+        </div>
+        <div class="view back-view">
+          <img src="../images/thor_2.jpg" alt="card-img">
         </div>
       </li>
     </ul>
   </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+   <!-- <div class=""grid-container></div>
+ <p>Score: <span class="score"></span></p>
+  <div class="actions">
+    <button onClick="restart()">Restart</button>
+  </div>
+  <script src="index.js"></script> -->
