@@ -14,8 +14,8 @@ body{
   background: rgb(255, 200, 80);
 }
 .wrapper{
-height: 400px;
-width: 400px;
+height: 1000px;
+width: 1000px;
 padding: 25px;
 background: white;
 border-radius: 10px;
@@ -73,13 +73,13 @@ border-radius: 10px;
 }
 .card .front-view span{
   color: #6563ff;
-  font-size: 40px;
+  font-size: 100px;
 }
 .card .back-view{
   transform: rotateY(-180deg);
 }
 .card .back-view img{
-  max-width: 45px;
+  /* max-width: 45px; */
 }
 .card.flip .front-view{
   transform: rotateY(180deg)
